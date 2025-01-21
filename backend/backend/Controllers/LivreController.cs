@@ -260,6 +260,7 @@ namespace backend.Controllers
                 _logger.LogError(ex, "Erreur lors de la suppression de l'ancienne image.");
             }
         }
+
         // Supprimer un livre (accessible seulement par un Bibliothécaire)
         [Authorize(Roles = "Bibliothecaire")]
         [HttpDelete("{id}")]
@@ -275,6 +276,59 @@ namespace backend.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        [HttpGet("search")]
+        public IActionResult SearchBooks(
+            [FromQuery] string? titre,
+            [FromQuery] string? auteur,
+            [FromQuery] string? genre,
+            [FromQuery] int? anneePublication,
+            [FromQuery] bool? disponiblesUniquement)
+        {
+            // Construire la requête de recherche
+            var query = _context.Livres.AsQueryable();
+
+            if (!string.IsNullOrEmpty(titre))
+            {
+                query = query.Where(l => l.Titre.Contains(titre));
+            }
+
+            if (!string.IsNullOrEmpty(auteur))
+            {
+                query = query.Where(l => l.Auteur.Contains(auteur));
+            }
+
+            if (!string.IsNullOrEmpty(genre))
+            {
+                query = query.Where(l => l.Genre.Contains(genre));
+            }
+
+            if (anneePublication.HasValue)
+            {
+                query = query.Where(l => l.AnneePublication == anneePublication.Value);
+            }
+
+            if (disponiblesUniquement.HasValue && disponiblesUniquement.Value)
+            {
+                query = query.Where(l => l.ExemplairesDisponibles > 0);
+            }
+
+            var result = query.Select(l => new
+            {
+                l.Id,
+                l.Titre,
+                l.Auteur,
+                l.Editeur,
+                l.Genre,
+                l.AnneePublication,
+                l.ExemplairesDisponibles,
+                l.DateCreation,
+                l.DateMiseAJour,
+                l.ImageUrl
+            }).ToList();
+
+            return Ok(result);
         }
 
         // Méthode pour télécharger une image pour un livre
