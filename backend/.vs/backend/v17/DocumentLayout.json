@@ -3,38 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\controllers\\livrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\controllers\\livrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\models\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\models\\livre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\controllers\\empruntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\controllers\\empruntcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\dto\\livredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\dto\\livredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\dto\\empruntdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\dto\\empruntdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\models\\emprunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\models\\emprunt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\helpers\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\helpers\\fileuploadoperationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|c:\\users\\soufian bk\\desktop\\.net project\\backend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{266ECA4D-D2E8-4AAC-B2DE-D18EA7C29855}|backend\\backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,115 +22,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Livre.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Models\\Livre.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Livre.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Models\\Livre.cs",
-              "RelativeToolTip": "backend\\Models\\Livre.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T21:43:24.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LivreDTO.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\DTO\\LivreDTO.cs",
-              "RelativeDocumentMoniker": "backend\\DTO\\LivreDTO.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\DTO\\LivreDTO.cs",
-              "RelativeToolTip": "backend\\DTO\\LivreDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:05:19.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmpruntDTO.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\DTO\\EmpruntDTO.cs",
-              "RelativeDocumentMoniker": "backend\\DTO\\EmpruntDTO.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\DTO\\EmpruntDTO.cs",
-              "RelativeToolTip": "backend\\DTO\\EmpruntDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:44:03.757Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEoAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:34:13.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FileUploadOperationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Helpers\\FileUploadOperationFilter.cs",
-              "RelativeDocumentMoniker": "backend\\Helpers\\FileUploadOperationFilter.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Helpers\\FileUploadOperationFilter.cs",
-              "RelativeToolTip": "backend\\Helpers\\FileUploadOperationFilter.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAgwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:31:20.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmpruntController.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\EmpruntController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\EmpruntController.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\EmpruntController.cs",
-              "RelativeToolTip": "backend\\Controllers\\EmpruntController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAJMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:30:07.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwDsAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAG8AAAAAmZmZmZkBwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:27:26.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LivreController.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\LivreController.cs",
-              "RelativeDocumentMoniker": "backend\\Controllers\\LivreController.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Controllers\\LivreController.cs*",
-              "RelativeToolTip": "backend\\Controllers\\LivreController.cs*",
-              "ViewState": "AgIAADEBAAAAAAAAAAAgwEsBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T22:27:12.519Z",
+              "WhenOpened": "2025-01-24T11:56:14.518Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Emprunt.cs",
-              "DocumentMoniker": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Models\\Emprunt.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Emprunt.cs",
-              "ToolTip": "C:\\Users\\SOUFIAN BK\\Desktop\\.net project\\backend\\backend\\Models\\Emprunt.cs",
-              "RelativeToolTip": "backend\\Models\\Emprunt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:44:14.823Z"
             }
           ]
         }

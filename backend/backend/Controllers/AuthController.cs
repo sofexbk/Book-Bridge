@@ -18,20 +18,18 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] UtilisateurRegisterRequest request)
     {
-        // Vérifier si l'email est déjà utilisé
         if (await _context.Utilisateurs.AnyAsync(u => u.Email == request.Email))
         {
             return BadRequest(new { Message = "Email déjà utilisé." });
         }
 
-        // Créer un nouvel utilisateur avec le rôle Lecteur
         var utilisateur = new Utilisateur
         {
             Email = request.Email,
             MotDePasse = BCrypt.Net.BCrypt.HashPassword(request.MotDePasse),
             Prenom = request.Prenom,
             Nom = request.Nom,
-            Role = RoleUtilisateur.Lecteur // Rôle par défaut
+            Role = RoleUtilisateur.Lecteur
         };
 
         _context.Utilisateurs.Add(utilisateur);
@@ -51,29 +49,27 @@ public class AuthController : ControllerBase
             return Unauthorized("Identifiants incorrects.");
         }
 
-        // Générer le token JWT
         var token = JwtHelper.GenerateToken(utilisateur.Id, utilisateur.Role.ToString());
 
-        // Retourner les informations nécessaires
         var response = new
         {
-            userId=utilisateur.Id,
+            userId = utilisateur.Id,
             Token = token,
             Email = utilisateur.Email,
             Prenom = utilisateur.Prenom,
             Nom = utilisateur.Nom,
-            Role = utilisateur.Role.ToString() // Retourner le nom du rôle (par exemple, "Lecteur")
+            Role = utilisateur.Role.ToString()
         };
 
         return Ok(response);
     }
-    [Authorize(Roles = "Bibliothecaire")] // Restreindre l'accès aux rôles spécifiques
+
+    [Authorize(Roles = "Bibliothecaire")]
     [HttpGet("users")]
     public async Task<IActionResult> GetAllUsers()
     {
         try
         {
-            // Récupérer tous les utilisateurs
             var utilisateurs = await _context.Utilisateurs
                 .Select(u => new
                 {
@@ -81,7 +77,7 @@ public class AuthController : ControllerBase
                     u.Email,
                     u.Prenom,
                     u.Nom,
-                    Role = u.Role.ToString() // Convertir le rôle en chaîne de caractères
+                    Role = u.Role.ToString()
                 })
                 .ToListAsync();
 
@@ -91,6 +87,70 @@ public class AuthController : ControllerBase
         {
             return StatusCode(500, new { Message = "Une erreur est survenue lors de la récupération des utilisateurs.", Error = ex.Message });
         }
+    }
+
+    [Authorize(Roles = "Bibliothecaire")]
+    [HttpDelete("users/{id}")]
+    public async Task<IActionResult> DeleteUser(int id)
+    {
+        var utilisateur = await _context.Utilisateurs.FindAsync(id);
+
+        if (utilisateur == null)
+        {
+            return NotFound(new { Message = "Utilisateur introuvable." });
+        }
+
+        _context.Utilisateurs.Remove(utilisateur);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { Message = "Utilisateur supprimé avec succès." });
+    }
+
+    [Authorize(Roles = "Bibliothecaire")]
+    [HttpPut("users/{id}")]
+    public async Task<IActionResult> UpdateUser(int id, [FromBody] UpdateUserRequest request)
+    {
+        var utilisateur = await _context.Utilisateurs.FindAsync(id);
+
+        if (utilisateur == null)
+        {
+            return NotFound(new { Message = "Utilisateur introuvable." });
+        }
+
+        utilisateur.Prenom = request.Prenom;
+        utilisateur.Nom = request.Nom;
+        utilisateur.Email = request.Email;
+
+
+  
+        _context.Utilisateurs.Update(utilisateur);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { Message = "Utilisateur mis à jour avec succès." });
+    }
+
+    [Authorize(Roles = "Bibliothecaire")]
+    [HttpGet("users/{id}")]
+    public async Task<IActionResult> GetUserById(int id)
+    {
+        var utilisateur = await _context.Utilisateurs
+            .Where(u => u.Id == id)
+            .Select(u => new
+            {
+                u.Id,
+                u.Email,
+                u.Prenom,
+                u.Nom,
+                Role = u.Role.ToString()
+            })
+            .FirstOrDefaultAsync();
+
+        if (utilisateur == null)
+        {
+            return NotFound(new { Message = "Utilisateur introuvable." });
+        }
+
+        return Ok(utilisateur);
     }
 }
 
@@ -104,6 +164,13 @@ public class UtilisateurRegisterRequest
 {
     public string Email { get; set; }
     public string MotDePasse { get; set; }
+    public string Prenom { get; set; }
+    public string Nom { get; set; }
+}
+
+public class UpdateUserRequest
+{
+    public string Email { get; set; }
     public string Prenom { get; set; }
     public string Nom { get; set; }
 }
