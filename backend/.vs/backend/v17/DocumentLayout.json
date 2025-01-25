@@ -33,12 +33,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Utilisateurs [Data]",
+              "Title": "dbo.Utilisateurs.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookBridgeDB/True/SqlTable/dbo.Utilisateurs.sql",
-              "ToolTip": "dbo.Utilisateurs [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookBridgeDB/True/SqlTable/dbo.Utilisateurs.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-25T16:52:26.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T16:52:26.611Z"
             },
             {
               "$type": "Document",
@@ -50,8 +49,7 @@
               "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T14:15:06.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T14:15:06.932Z"
             },
             {
               "$type": "Document",
@@ -63,8 +61,7 @@
               "RelativeToolTip": "backend\\Controllers\\LivreController.cs",
               "ViewState": "AgIAACgAAAAAAAAAAIAwwDQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T17:32:49.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T17:32:49.5Z"
             },
             {
               "$type": "Document",
@@ -72,8 +69,8 @@
               "Title": "EmpruntController.cs",
               "DocumentMoniker": "C:\\Users\\rayes\\OneDrive\\Desktop\\.NET project\\.net-project\\backend\\backend\\Controllers\\EmpruntController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\EmpruntController.cs",
-              "ToolTip": "C:\\Users\\rayes\\OneDrive\\Desktop\\.NET project\\.net-project\\backend\\backend\\Controllers\\EmpruntController.cs*",
-              "RelativeToolTip": "backend\\Controllers\\EmpruntController.cs*",
+              "ToolTip": "C:\\Users\\rayes\\OneDrive\\Desktop\\.NET project\\.net-project\\backend\\backend\\Controllers\\EmpruntController.cs",
+              "RelativeToolTip": "backend\\Controllers\\EmpruntController.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAIAwwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-24T15:18:21.175Z",
@@ -82,12 +79,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "dbo.Emprunts [Data]",
+              "Title": "dbo.Emprunts.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookBridgeDB/True/SqlTable/dbo.Emprunts.sql",
-              "ToolTip": "dbo.Emprunts [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/BookBridgeDB/True/SqlTable/dbo.Emprunts.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-25T18:14:11.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-25T18:14:11.492Z"
             }
           ]
         }

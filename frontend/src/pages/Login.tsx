@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await login(email, password);
-      navigate('/');
+      navigate('/home');
 
     } catch (err) {
       setError('Failed to sign in');

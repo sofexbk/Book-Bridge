@@ -24,10 +24,10 @@ function App() {
         <Navbar />
         <main className="flex-grow container mx-auto px-4 py-8">
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/register" element={<SignUp />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/books/:id" element={<BookDetails />} />
             <Route path="/borrowed" element={<BorrowedBooks />} />
             <Route path="/admin" element={<AdminDashboard />} />

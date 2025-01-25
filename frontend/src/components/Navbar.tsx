@@ -8,7 +8,7 @@ export default function Navbar() {
   const user = JSON.parse(localStorage.getItem('user') || '{}');
   const handleSignOut = async () => {
     await signOut();
-    navigate('/login');
+    navigate('/');
   };
 
   return (
