@@ -86,8 +86,17 @@ namespace backend.Controllers
             {
                 if (!ModelState.IsValid)
                 {
+                    foreach (var key in ModelState.Keys)
+                    {
+                        var errors = ModelState[key].Errors;
+                        foreach (var error in errors)
+                        {
+                            System.Console.WriteLine($"Validation failed for {key}: {error.ErrorMessage}");
+                        }
+                    }
                     return BadRequest(new ValidationProblemDetails(ModelState));
                 }
+
 
                 // Récupérer le fichier image depuis la requête
                 var imageFile = Request.Form.Files.GetFile("ImageUrl");

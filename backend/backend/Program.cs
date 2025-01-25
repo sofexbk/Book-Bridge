@@ -10,6 +10,17 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder
+            .SetIsOriginAllowed(_ => true)
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 // Ajouter le service de logging
 builder.Services.AddLogging(options =>
 {
@@ -87,6 +98,11 @@ using (var scope = app.Services.CreateScope())
         dbContext.SaveChanges();
     }
 }
+
+
+
+app.UseCors();
+
 // Ajoutez un logger pour toute la demande HTTP
 app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseStaticFiles();

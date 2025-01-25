@@ -139,7 +139,6 @@ namespace backend.Controllers
 
         // Retourner un livre
         [HttpPut("emprunt/retour/{id}")]
-        [Authorize(Roles = "Lecteur")]
         public async Task<IActionResult> RetournerLivre(int id)
         {
             var emprunt = await _context.Emprunts.FindAsync(id);
